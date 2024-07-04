@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>Mensagens flutuantes</title>
+</head>
+<body>
+    <div class="container my-5">
+        <button class="btn btn-primary mb-3" id="btnToast" data-bs-toggle="tooltip" data-bs-title="Este botão cria um <b>toast</b>." data-bs-html="true">Criar toast</button>
+
+        <div class="toast-container top-0 end-0 p-3" id="toastContainer"></div>
+
+        <div class="toast" id="toast">
+            <div class="toast-header">
+                <i class="bi-info-circle me-1"></i>
+                <strong class="me-auto">Informação</strong>
+                <button class="btn-close ms-auto" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi similique perferendis eos quibusdam culpa quaerat saepe amet magnam ab.
+            </div>
+        </div>
+        <hr>
+        <div class="toast" data-bs-delay="5000">
+            <div class="toast-body">
+                Cheagaram novas mensagens em sua caixa postal.
+                <div class="mt-2 pt-2 border-top">
+                    <button class="btn btn-primary btn-sm">Visualizar</button>
+                    <button class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Ignorar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
